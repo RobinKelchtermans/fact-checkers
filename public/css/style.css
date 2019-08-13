@@ -1,0 +1,401 @@
+
+
+#sidebar .card {
+    top: 5em;
+}
+
+.navbar {
+    z-index: 1030;
+}
+
+.avatar-navbar {
+    max-width: 1.8em;
+    max-height: 1.8em;
+    border-radius: 50%;
+}
+
+.avatar {
+    max-width: 3em;
+    max-height: 3em;
+}
+
+#footer-navbar {
+    padding: 0;
+    
+}
+
+.card {
+    max-width: 100%;
+}
+
+.crop-text-1 {
+    -webkit-line-clamp: 1;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.crop-text-2 {
+    -webkit-line-clamp: 2;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.crop-text-3 {
+    -webkit-line-clamp: 3;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.img-stretch {
+    width: 100%;
+}
+
+.blockquote-border {
+    border: solid lightgray 1px;
+}
+
+#informedConsentBox {
+    max-height: 40em;
+    overflow-y: scroll;
+}
+
+.toast-header {
+    
+}
+
+.toast {
+    box-shadow: rgba(128, 128, 128, 0.582) 0 0 20px 5px;
+    color: black;
+    background-color: white;
+}
+
+.toast-primary {
+    border: 1px #007bff solid;
+}
+.toast-primary > .toast-header {
+    color: white;
+    background-color: #007bff;
+}
+
+.toast-success {
+    border: 1px #28a745 solid;
+}
+.toast-success > .toast-header {
+    color: white;
+    background-color: #28a745;
+}
+
+.toast-warning {
+    border: 1px #ffc107 solid;
+}
+.toast-warning > .toast-header {
+    color: #212529;
+    background-color: #ffc107;
+}
+
+.toast-danger {
+    border: 1px #dc3545 solid;
+}
+.toast-danger > .toast-header {
+    color: white;
+    background-color: #dc3545;
+}
+
+
+/* a.introjs-skipbutton {display: none !important;} */
+#scoreInfoModal.introjs-fixParent,
+#generalInfoModal.introjs-fixParent {
+    z-index: 9999999 !important;
+}
+.introjs-tooltip {
+    /* box-shadow: 0 0 5px 5px rgba(0,0,0,.4) !important; */
+    background-color: rgb(156, 206, 253) !important;
+}
+
+/* Article */
+a.article-card,
+a.article-card:hover {
+  color: inherit;
+}
+
+.most-read-card {
+    top: 4em;
+}
+
+a.article-card .card {
+  display: inline-block;
+}
+
+#marked-tooltip {
+    position: absolute;
+}
+
+.comment {
+    background-color: #efefef;
+    padding: 0.2em 0.5em;
+    border-radius: 0.8em;
+}
+
+.popover-options {
+    color: gray;
+}
+
+.glow {
+    box-shadow: lightblue 0 0 20px 1px;
+    transition-duration: 0.5s;
+}
+
+.recently-glowed {
+    box-shadow: none;
+    transition-duration: 0.5s;
+}
+
+.highlight {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.highlight-glow {
+    box-shadow: 0 0 10px 2px orange;
+}
+
+.no-highlight {
+    background-color: inherit;
+    cursor: inherit;
+}
+
+.inline-comment {
+    z-index: 1021;
+    position: absolute;
+}
+
+.inline-comment-mini {
+    z-index: 1020;
+    position: absolute;
+}
+
+.close-comment {
+    z-index: 1022;
+    position: absolute;
+    cursor: pointer;
+    color: black;
+    top: 0;
+    right: 0;
+    padding: 0.2em;
+    font-size: 1em;
+}
+
+.inline-comment.active {
+    z-index: 1024;
+}
+
+.overlay {
+    background:gray; 
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1023;
+}
+
+.smooth-transition.col-sm-0,
+.smooth-transition.col-sm-4,
+.smooth-transition.col-sm-8,
+.smooth-transition.col-sm-12 {
+    transition-duration: 500ms;
+}
+
+/*profile*/
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3em;
+    height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.3em;
+    width: 1.3em;
+    left: 0.2em;
+    bottom: 0.1em;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(1.3em);
+    -ms-transform: translateX(1.3em);
+    transform: translateX(1.3em);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 1.5em;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Steps*/
+
+.step-number {
+    padding: 0.2em 0.5em;
+    font-size: 3em;
+    background-color: white;
+    border-radius: 15em;
+    border: 0.05em lightgray solid;
+}
+
+.step-done {
+    opacity: 0.3;
+}
+
+.step-todo {
+    opacity: 0.7;
+}
+
+.step-active .step-number, 
+.step-active .card {
+    border: rgb(108, 204, 108)  0.05em solid;
+    box-shadow: 0 0 10px 3px lightgrey;
+}
+
+/* cards */
+.togglable-card {
+    cursor: pointer;
+}
+.togglable-card:hover {
+    box-shadow: 0 0 10px 3px lightgrey;
+}
+
+
+/*Rating*/
+
+.thrust-label {
+    font-size: inherit;
+}
+.thrust-rating {
+    opacity: 0.4;
+    cursor: pointer;
+}
+.thrust-rating:hover,
+.thrust-rating.hovered {
+    opacity: 1;
+}
+.thrust-rating-fake {
+    color: rgb(196, 1, 1);
+}
+.thrust-rating-f {
+    color: #FF1000;
+}
+.thrust-rating-mf {
+    color: #FF5000;
+}
+.thrust-rating-ht {
+    color: #FFAA00;
+}
+.thrust-rating-mt {
+    color: #47FF00;
+}
+.thrust-rating-t {
+    color: rgb(0, 179, 0);
+}
+.active-rating {
+    opacity: 1;
+} 
+.active-rating.temp-not-active-rating {
+    opacity: 0.4;
+} 
+
+.article-card .badge-secondary,
+.badge-thrust-rating-fake,
+.badge-thrust-rating-f,
+.badge-thrust-rating-mf,
+.badge-thrust-rating-ht,
+.badge-thrust-rating-mt,
+.badge-thrust-rating-t  {
+    color:white;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.badge-thrust-rating-fake {
+    background-color: rgb(196, 1, 1);
+}
+.badge-thrust-rating-f {
+    background-color: #FF1000;
+}
+.badge-thrust-rating-mf {
+    background-color: #FF5000;
+}
+.badge-thrust-rating-ht {
+    background-color: #FFAA00;
+}
+.badge-thrust-rating-mt {
+    background-color: #47FF00;
+}
+.badge-thrust-rating-t {
+    background-color: rgb(0, 179, 0);
+}
+
+/* Votes */
+
+.voted {
+    font-weight: bold;
+}
+
+#articleBox h1 {
+    font-size: 1.6rem !important;
+}
+#articleBox h2 {
+    font-size: 1.3rem !important;
+}
+#articleBox h3 {
+    font-size: 1.2rem !important;
+}
+#articleBox h4,
+#articleBox h5,
+#articleBox h6 {
+    font-size: 1.1rem !important;
+}

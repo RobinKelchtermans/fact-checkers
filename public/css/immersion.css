@@ -1,0 +1,93 @@
+
+body,
+#app,
+main {
+    padding: 0;
+}
+  
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+
+.header-progress-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-progress-item {
+    position: relative;
+    display: inline-block;
+    width: calc(95%/28);
+    text-align: center;
+    line-height: 3em;
+}
+.header-progress-item.media-progress {
+    width: calc(95%/14);
+}
+.header-progress-item.sus-progress {
+    width: calc(95%/13);
+}
+.header-progress-item.end-progress {
+    width: calc(95%/8);
+}
+
+.header-progress-item:after {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: -2px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: #3490dc;
+}
+
+.header-progress-item:before {
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    left: 100%;
+    height: 10px;
+    width: 10px;
+    border-radius: 1.2em;
+    border: none;
+    line-height: 1.2em;
+    content: " ";
+    background-color: #3490dc;
+}
+
+.header-progress-item:first-child:after {
+    display: none;
+}
+
+.header-progress-item.done {
+    color: #A4A4A4;
+}
+
+.header-progress-item.todo {
+    color: #DDDADD;
+}
+.header-progress-item.todo:after {
+    background: #F1F1F1;
+}
+
+.header-progress-item.todo:before {
+    background-color: #DADADA;
+}
+
+
+.newspapers img {
+    max-width: 10em;
+    max-height: 10em;
+}
