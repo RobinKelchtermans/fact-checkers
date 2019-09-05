@@ -47,7 +47,8 @@ Register to the application as user.
 Be sure to add yourself as admin user to your database (manually). This can be done by setting the `is_admin` value to `1` in the `users` table.
 
 ### Selenium
-Only for admins! 
+Only for admins!
+Go to `app/Models/Feed.php` on line 27 change the address of your selenium server. The default address if you run it locally can be found on line 28.
 Run the `selenium-server-standalone-3.9.1.jar` in the `selenium`folder to launch a selenium instance. This is needed to retrieve the articles.
 Go to `<your home page>/feedLoader`. This will take a few minutes and will load all the articles into the database.
 Happy browsing!
